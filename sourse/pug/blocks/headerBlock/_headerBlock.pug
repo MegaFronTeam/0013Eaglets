@@ -1,10 +1,32 @@
 mixin headerBlock()
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+		+e.container.container
+			+topLine()
+			+img('img/dots.png').dots
+			+e.row.row
+				.col-lg-5
+					h1 До регистрации 
+						span осталось 
+					.timer
+						.timer__items
+							.timer__item.timer__days 00
+							.timer__item.timer__hours 00
+							.timer__item.timer__minutes 00
+				.col-lg-7
+					+e.slider--js.swiper
+						.swiper-wrapper
+							-for(var i = 1; i <= 9; i++)
+								+e.slide.swiper-slide
+									+e.img-wrap
+										+img(`img/headerSlider-img-${i}.jpg`)
+					+e.slider-thumbs--js.swiper
+						.swiper-wrapper
+							-for(var i = 2; i <= 8; i++)
+								+e.slide.swiper-slide
+									+e.img-wrap--thumbs
+										+img(`img/headerSlider-img-${i}.jpg`)
+							+e.slide.swiper-slide
+									+e.img-wrap--thumbs
+										+img(`img/headerSlider-img-1.jpg`)
 	// end headerBlock

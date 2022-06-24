@@ -2,8 +2,22 @@ mixin sContent()
 	// start sContent
 	+b.SECTION.sContent.section#sContent&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContent
-				
-			.row
+			+e.row.row
+				.col-lg-6
+					+b.section-title
+						h2 Программа развития <br>
+							span «Орлята России»
+					+e.text Программа развития социальной активности учащихся начальных классов &laquo;Орлята России&raquo; разработана с&nbsp;целью удовлетворения потребностей младших школьников в&nbsp;социальной активности, поддержания и&nbsp;развития интереса к&nbsp;учебным и&nbsp;внеурочным видам деятельности, обеспечивая преемственность с&nbsp;Российским движением школьников.
+					+e.text Срок: 27 сентября 2021 года – 31 мая 2022 года;
+					+e.showmore(href="#") Подробнее
+						+icon('chevron-down')
+				.col-lg-6
+					+e.item
+						p #[span Положение] о&nbsp;конкурсном отборе на&nbsp;Всероссийскую смену &laquo;Содружество Орлят России&raquo;
+					+e.item
+						p #[span Инструкция по&nbsp;работе] на&nbsp;сайте Российского движения школьников по&nbsp;подаче заявки на&nbsp;участие в&nbsp;конкурсном отборе на&nbsp;Всероссийскую смену &laquo;Содружество Орлят России&raquo;.
+					+e.item
+						+img('img/sContent-img-2.png').wing-left
+						p #[span Победители] конкурсного отбора на&nbsp;обучение по&nbsp;тематической дополнительной общеразвивающей программе &laquo;Содружество Орлят России&raquo;
+						+img('img/sContent-img-1.png').wing-right
 	// end sContent

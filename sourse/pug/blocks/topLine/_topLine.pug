@@ -1,9 +1,13 @@
 mixin topLine()
 	// start topLine
 	+b.topLine.section#topLine&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 topLine
-				
-			.row
+		//- .container
+		.row
+			.col-4.col-sm
+				a(href="#") 
+					+img('img/logo.png')
+			.col-4.col-sm-auto
+				+img('img/topLine-img-1.png')
+			.col-4.col-sm-auto
+				+img('img/topLine-img-2.png')
 	// end topLine

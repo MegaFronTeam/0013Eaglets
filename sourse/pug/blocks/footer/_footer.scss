@@ -1,43 +1,150 @@
 .footer {
+	// padding-top: rem(42);
+	background-color: $gray-900;
+	&__container {
+		padding-top: rem(42);
+		position: relative;
+	}
+	img {
+		position: absolute;
+		bottom: 0;
+		height: 100%;
+		// z-index: -1;
+	}
+	.img-left {
+		right: calc(100% + 113px);
+	}
+	.img-right {
+		left: calc(100% + -119px);
+	}
+	&__row {
+		padding-bottom: rem(35);
+		--bs-gutter-y: #{rem(20)};
+	}
+	&__item {
+		max-width: rem(370);
+		position: relative;
+		z-index: 2;
+
+		display: flex;
+		flex-direction: column;
+
+		// background-color: $gray-900;
+		h5 {
+			color: $purple;
+			margin-bottom: rem(18);
+			font-weight: 700;
+		}
+		a {
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+	&__content {
+		max-width: rem(275);
+		display: flex;
+		align-items: center;
 		
-	margin-top: auto;
+		text-decoration: none;
+		color: $white;
+		&:not(:last-child) {
+			margin-bottom: rem(30);
+		}
+		.icon {
+			color: $cyan;
+			&-call {
+				font-size: rem(14);
+			}
+			&-mail {
+				font-size: rem(16);
+			}
+			&-location {
+				font-size: rem(18);
+			}
+		}
+	}
+	&__icon {
+		width: 16px;
+		margin-right: rem(12);
+	}
+	&__links {
+		position: relative;
 
-// 
-@include media-breakpoint-up(xl) {}
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-@include media-breakpoint-up(lg) {}
+		padding-top: rem(14);
+		padding-bottom: rem(30);
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: rem(870);
+			height: 1px;
+			background-color: rgba(217, 217, 217, 0.1);
+			top: 0;
+			left: 0;
+		}
+		a {
+			text-decoration: none;
+			font-size: rem(13);
+			&:hover {
+				color: $primary;
+			}
+		}
+		p {
+			color: $gray-600;
+			margin-bottom: 0;
+			margin-right: rem(19);
+			margin-left: rem(20);
+			@include media-breakpoint-up(sm) {
+				margin-right: rem(104);
+			}
+		}
+	}
+	&__site {
+		color: $gray-600;
+	}
+	&__politics {
+		color: $cyan;
+	}
+	@include media-breakpoint-up(xl) {}
 
-@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(lg) {}
 
-@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(md) {}
 
-@include media-breakpoint-up(xs) {}
+	@include media-breakpoint-up(sm) {}
 
-
-// 
-@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-up(xs) {}
 
 
-// 
-@include media-breakpoint-only(xs) {}
-
-@include media-breakpoint-only(sm) {}
-
-@include media-breakpoint-only(md) {}
-
-@include media-breakpoint-only(lg) {}
-
-@include media-breakpoint-only(xl) {}
+	// 
+	@include media-breakpoint-between(md, xl) {}
 
 
-// 
-@include media-breakpoint-down(xl) {}
+	// 
+	@include media-breakpoint-only(xs) {}
 
-@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-only(sm) {}
 
-@include media-breakpoint-down(md) {}
+	@include media-breakpoint-only(md) {}
 
-@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-only(lg) {}
 
-@include media-breakpoint-down(xs) {}
+	@include media-breakpoint-only(xl) {}
+
+
+	// 
+	@include media-breakpoint-down(xl) {}
+
+	@include media-breakpoint-down(lg) {}
+
+	@include media-breakpoint-down(md) {}
+
+	@include media-breakpoint-down(sm) {}
+
+	@include media-breakpoint-down(xs) {}
 }

@@ -1,7 +1,75 @@
 
 	// start .sContent
-	.sContent {
-		 
+.sContent {
+	--sPT: #{rem(45)};
+	--sPB: #{rem(45)};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(65.5)};
+	}
+	&__row {
+		--bs-gutter-y: #{rem(20)};
+	}
+	h2 {
+		font-weight: 800;
+		line-height: 1.3em;
+		margin-bottom: rem(18);
+		span {
+			color: $purple;
+		}
+	}
+	&__text {
+		color: $gray-600;
+		line-height: 1.5em;
+		margin-bottom: rem(16);
+		&:not(:last-of-type) {
+			margin-bottom: rem(30);
+		}
+	}
+	&__showmore {
+		text-decoration: none;
+		color: $gray-900;
+		font-size: rem(14);
+
+		display: flex;
+		align-items: center;
+		.icon {
+			color: $gray-500;
+			font-size: rem(16);
+			margin-left: rem(4);
+		}
+	}
+	&__item {
+		background-color: #fff;
+		padding: rem(20);
+		border-radius: 28px 0px 28px 28px;
+		position: relative;
+		@include media-breakpoint-up(lg) {
+			padding: rem(40);
+		}
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+		p {
+			font-weight: 700;
+			line-height: 1.75em;
+			margin-bottom: 0;
+			span {
+				color: $cyan;
+			}
+		}
+		img {
+			position: absolute;
+			z-index: -1;
+		}
+		.wing-left {
+			bottom: -81px;
+			left: -146px;
+		}
+		.wing-right {
+			bottom: -31px;
+			right: -113px;
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

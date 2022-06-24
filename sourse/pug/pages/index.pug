@@ -6,6 +6,8 @@ include ../blocks/top-nav/_top-nav.pug
 include ../blocks/headerBlock/_headerBlock.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sContent/_sContent.pug
+
+include ../blocks/sVideo/_sVideo.pug
  
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
@@ -23,29 +25,12 @@ block pagecontent
 	//- +mob-mnu()
 	
 	
-	+header()
-	+top-nav()
-	+topLine
-	.container
-		+in-c('radio', 'sdasdasdasd')
-		+in-c('radio', 'sdasdasdasd')
-	form
-		+input('fsdfs','tel')(required)
-		button  btn
+	//- +header()
+	//- +top-nav()
+	//- +topLine 
 	+headerBlock
-
-	+soc()
-	+sForm()
-	//- +sForm()
-	//- - let list = items[0].title
-	//- p= list
-	.container
-		each item in items
-			li 
-				h2= item.title
-				p= item.text
-	//- +sContact()
-	
+	+sContent
+	+sVideo
 	+footer()
       
 

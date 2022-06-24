@@ -1,0 +1,86 @@
+// start .sVideo
+.sVideo {
+	--sPT: #{rem(45)};
+	--sPB: #{rem(45)};
+	// --sTPB: #{rem()};
+	@include media-breakpoint-up(lg) {
+		--sPB: #{rem(90)};
+	}
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		--bs-gutter-y: #{rem(20)};
+
+	}
+	.section-title{
+
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	&__video-wrap {
+		@include block(1170, 748);
+		border-radius: 20px;
+		overflow: hidden;
+		margin-bottom: rem(45);
+		cursor: pointer;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(90);
+		}
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__play-icon {
+		pointer-events: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: rem(86);
+		height: rem(86);
+		background-color: $pink;
+		color: $white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		.icon {
+			font-size: rem(28);
+			@include media-breakpoint-up(md) {
+				font-size: rem(54);
+			}
+		}
+		@include media-breakpoint-up(md) {
+			width: rem(230);
+			height: rem(230);
+		}
+	}
+	&__btn {
+		width: 100%;
+		text-transform: uppercase;
+		--bs-btn-padding-y: #{rem(29)};
+		--bs-btn-font-weight: 700;
+		--bs-btn-font-size: #{rem(20)};
+		--bs-btn-border-radius: #{rem(20)};
+		@include media-breakpoint-down(sm) {
+			--bs-btn-font-size: #{rem(15)};
+		}
+		&.btn-primary {
+			--bs-btn-color: #fff;
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sVideo

@@ -23,6 +23,7 @@ html{
 }
 
 body {
+	background-color: $gray-100;
 	&.fixed,
 	&.fancybox-active{
 		.header{ 
@@ -486,4 +487,8 @@ iframe {
 .swiper-wrapper{
 	
 	// @include row-sw(10px, sm, 100px);
+}
+
+.row {
+	--bs-gutter-x: #{rem(30)};
 }

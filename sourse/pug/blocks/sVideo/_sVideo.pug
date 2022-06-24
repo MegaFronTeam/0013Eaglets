@@ -1,0 +1,14 @@
+mixin sVideo(data)
+	// start sVideo
+	+b.SECTION.sVideo.section#sVideo&attributes(attributes)
+		.container
+			+e.video-wrap
+				<iframe src="https://vk.com/video_ext.php?oid=-122623791&id=456247720&hash=54c9c4e345d886c9"frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+				+e.play-icon
+					+icon('play')
+			+e.row.row
+				.col-lg
+					+e.btn(href="#").btn.btn-outline-primary Методические материалы
+				.col-lg
+					+e.btn(href="#").btn.btn-primary регистрация
+	// end sVideo
