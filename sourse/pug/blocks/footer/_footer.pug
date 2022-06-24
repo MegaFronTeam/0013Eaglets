@@ -6,7 +6,7 @@ mixin footer()
 			+e.row.row
 				.col-md
 					+e.item
-						h5 Почтовый адрес и приём курьерской корреспонденции
+						h5 Контакты РДШ
 						+e.content(href="tel:+74996730200")
 							+e.icon
 								+icon('call')
@@ -16,18 +16,32 @@ mixin footer()
 								+icon('mail')
 							| directorate-skm@yandex.ru
 
-						+e.content
-							+e.icon
-								+icon('location')
-							| 119048, Москва, ул.Усачева, д.64, подъезд 4
+						//- +e.content
+						//- 	+e.icon
+						//- 		+icon('location')
+						//- 	| 119048, Москва, ул.Усачева, д.64, подъезд 4
 				.col-md
 					+e.item
-						h5 Главное здание
-						+e.content
+						h5 Контакты ВДЦ «Орлёнок»
+						+e.content(href="tel:+74996730200")
 							+e.icon
-								+icon('location')
-							| 119048, Москва, ул.Усачева, д.64, подъезд 4
-						+e.content Метро Спортивная<br>Понедельник&nbsp;&mdash; пятница:<br>9.00-18.00
+								+icon('call')
+							| +7 499 673-02-00
+						+e.content(href="mailto:directorate-skm@yandex.ru")
+							+e.icon
+								+icon('mail')
+							| directorate-skm@yandex.ru
+				.col-md
+					+e.item
+						h5 Мы в социальных сетях
+						+e.content(href="tel:+74996730200")
+							+e.icon
+								+icon('vk')
+							| ВКонтакте
+						+e.content(href="tel:+74996730200")
+							+e.icon
+								+icon('telegram')
+							| Телеграм
 			+e.links
 				+e.site(href="рдш.рф" target="_blank", rel="noopener noreferrer") рдш.рф
 				p 2022

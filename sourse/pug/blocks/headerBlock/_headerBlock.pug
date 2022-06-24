@@ -6,8 +6,7 @@ mixin headerBlock()
 			+img('img/dots.png').dots
 			+e.row.row
 				.col-lg-5
-					h1 До регистрации 
-						span осталось 
+					h1 До старта программы…
 					.timer
 						.timer__items
 							.timer__item.timer__days 00
@@ -22,11 +21,8 @@ mixin headerBlock()
 										+img(`img/headerSlider-img-${i}.jpg`)
 					+e.slider-thumbs--js.swiper
 						.swiper-wrapper
-							-for(var i = 2; i <= 8; i++)
+							-for(var i = 1; i <= 9; i++)
 								+e.slide.swiper-slide
 									+e.img-wrap--thumbs
 										+img(`img/headerSlider-img-${i}.jpg`)
-							+e.slide.swiper-slide
-									+e.img-wrap--thumbs
-										+img(`img/headerSlider-img-1.jpg`)
 	// end headerBlock

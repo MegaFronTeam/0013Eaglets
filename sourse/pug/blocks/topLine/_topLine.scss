@@ -2,17 +2,21 @@
 	// start .topLine
 	.topLine {
 	padding-top: rem(35);
-	padding-bottom: 0;
-	.row {
-		> * {
-			@include media-breakpoint-down(sm) {
-				text-align: center;
-			}
+	padding-bottom: rem(15);
+	&__col {
+		text-align: center;
+		@include media-breakpoint-down(sm) {
 		}
 	}
 	img {
+		&.img-width {
+			width: 100%;
+			max-width: none;
+		}
+		max-width: rem(95);
+		text-align: center;
 		@include media-breakpoint-down(sm) {
-			max-width: 100%;
+			width: 100%;
 		}
 	}
 	@include media-breakpoint-up(xl) {}
