@@ -424,6 +424,16 @@ function eventHandler() {
 	countdownTimer();
 	timerId = setInterval(countdownTimer, 1000);
 	
+	$('.sVideo__video-wrap').on('click', function() {
+		$('.sVideo__play-icon').toggle();
+		console.log('1');
+	});
+
+	$('.sContent__showmore').on('click', function() {
+		$('.sContent__hidden-block').slideDown();
+		$(this).hide();
+	});
+	
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

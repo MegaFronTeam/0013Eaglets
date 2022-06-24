@@ -17,6 +17,9 @@
 			color: $purple;
 		}
 	}
+	&__hidden-block {
+		display: none;
+	}
 	&__text {
 		color: $gray-600;
 		line-height: 1.5em;
@@ -26,12 +29,17 @@
 		}
 	}
 	&__showmore {
+		@include mt;
+		cursor: pointer;
 		text-decoration: none;
 		color: $gray-900;
 		font-size: rem(14);
 
 		display: flex;
 		align-items: center;
+		&:hover {
+			color: $primary;
+		}
 		.icon {
 			color: $gray-500;
 			font-size: rem(16);
@@ -43,6 +51,11 @@
 		padding: rem(20);
 		border-radius: 28px 0px 28px 28px;
 		position: relative;
+		display: block;
+		text-decoration: none;
+		&:not(:hover) {
+			color: $gray-900;
+		}
 		@include media-breakpoint-up(lg) {
 			padding: rem(40);
 		}
