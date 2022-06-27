@@ -6,23 +6,25 @@ mixin headerBlock()
 			+img('img/dots.png').dots
 			+e.row.row
 				.col-lg-5
-					h1 До старта программы…
+					h1 До старта программы
 					.timer
 						.timer__items
 							.timer__item.timer__days 00
 							.timer__item.timer__hours 00
 							.timer__item.timer__minutes 00
+							.timer__item.timer__seconds 00
+					+reg()
 				.col-lg-7
 					+e.slider--js.swiper
 						.swiper-wrapper
-							-for(var i = 1; i <= 9; i++)
+							-for(var i = 1; i <= 4; i++)
 								+e.slide.swiper-slide
 									+e.img-wrap.bg-wrap
-										+pic(`headerSlider-img-${i}.jpg`,'bg').picture-bg
+										+pic(`slide-${i}.jpg`,'bg').picture-bg
 					+e.slider-thumbs--js.swiper
 						.swiper-wrapper
-							-for(var i = 1; i <= 9; i++)
+							-for(var i = 1; i <= 4; i++)
 								+e.slide.swiper-slide
 									+e.img-wrap--thumbs.bg-wrap
-										+pic(`headerSlider-img-${i}.jpg`,'bg').picture-bg
+										+pic(`slide-${i}.jpg`,'bg').picture-bg
 	// end headerBlock

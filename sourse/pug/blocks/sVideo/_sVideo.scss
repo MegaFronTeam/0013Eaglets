@@ -73,10 +73,7 @@
 		--bs-btn-hover-color: #fff;
 		@include media-breakpoint-down(sm) {
 			--bs-btn-font-size: #{rem(15)};
-		}
-		&.btn-primary {
-			--bs-btn-color: #fff;
-		}
+		} 
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

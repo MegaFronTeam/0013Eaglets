@@ -408,17 +408,17 @@ function eventHandler() {
 		$days.textContent = days < 10 ? '0' + days : days;
 		$hours.textContent = hours < 10 ? '0' + hours : hours;
 		$minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
-		// $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
+		$seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
 		$days.dataset.title = declensionNum(days, ['День', 'Дня', 'Дней']);
 		$hours.dataset.title = declensionNum(hours, ['Час', 'Часа', 'Часов']);
 		$minutes.dataset.title = declensionNum(minutes, ['Минута', 'Минуты', 'Минут']);
-		// $seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
+		$seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
 	};
 	// получаем элементы, содержащие компоненты даты
 	const $days = document.querySelector('.timer__days');
 	const $hours = document.querySelector('.timer__hours');
 	const $minutes = document.querySelector('.timer__minutes');
-	// const $seconds = document.querySelector('.timer__seconds');
+	const $seconds = document.querySelector('.timer__seconds');
 	// вызываем функцию countdownTimer
 	// вызываем функцию countdownTimer каждую секунду
 	countdownTimer();
