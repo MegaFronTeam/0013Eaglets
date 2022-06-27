@@ -1,6 +1,7 @@
 .footer {
 	// padding-top: rem(42);
 	background-color: $gray-900;
+	color: #fff;
 	&__container {
 		padding-top: rem(42);
 		position: relative;
@@ -44,7 +45,7 @@
 	&__content {
 		max-width: rem(275);
 		display: flex;
-		align-items: center;
+		// align-items: center;
 		
 		text-decoration: none;
 		color: $white;

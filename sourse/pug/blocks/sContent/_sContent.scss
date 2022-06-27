@@ -20,12 +20,18 @@
 	&__hidden-block {
 		display: none;
 	}
-	&__text {
+	&__main  {
 		color: $gray-600;
 		line-height: 1.5em;
-		margin-bottom: rem(16);
-		&:not(:last-of-type) {
-			margin-bottom: rem(30);
+		ul{
+			margin-left: rem(20);
+		}
+		p{
+
+			margin-bottom: rem(16);
+			&:not(:last-of-type) {
+				margin-bottom: rem(30);
+			}
 		}
 	}
 	&__showmore {
