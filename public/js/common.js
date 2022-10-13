@@ -421,8 +421,8 @@ function eventHandler() {
 	const $seconds = document.querySelector('.timer__seconds');
 	// вызываем функцию countdownTimer
 	// вызываем функцию countdownTimer каждую секунду
-	countdownTimer();
-	timerId = setInterval(countdownTimer, 1000);
+	// countdownTimer();
+	// timerId = setInterval(countdownTimer, 1000);
 
 	$('.sContent__showmore').on('click', function() {
 		$('.sContent__hidden-block').slideDown();
