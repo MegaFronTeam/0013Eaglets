@@ -43,11 +43,12 @@ mixin footer()
 				.col-md
 					+e.item
 						h5 Мы в социальных сетях
-						//- +e.content(href="tel:+74996730200")
-						//- 	+e.icon
-						//- 		+icon('vk')
-						//- 	| ВКонтакте
-						+e.content(href="https://vk.com/orlyata_rus" target="_blank")
+						+e.content(href="https://vk.com/orlyata_rus"  target="_blank")
+							+e.icon
+								+icon('vk')
+							| ВКонтакте
+						+e.content(href="https://t.me/orlyata_rus")
+
 							+e.icon
 								+icon('telegram')
 							| Телеграм
